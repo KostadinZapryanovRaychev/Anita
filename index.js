@@ -81,7 +81,6 @@ function bindPopupCloseButton() {
   try {
     const closePopup = document.getElementById("close-popup");
     if (closePopup) {
-      console.log("clicked");
       closePopup.addEventListener("click", closePopupForm);
     }
   } catch (e) {
