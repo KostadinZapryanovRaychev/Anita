@@ -120,7 +120,7 @@ function addOfferButtons(section) {
       if (!item.querySelector(".custom-offer-button-wrapper")) {
         const button = createOfferButton(item);
         const wrapper = createButtonWrapper(button);
-        item.appendChild(wrapper);
+        item?.appendChild(wrapper);
       }
     });
 
@@ -155,7 +155,7 @@ function createButtonWrapper(button) {
       transform: translateX(-50%);
       z-index: 10;
     `;
-    wrapper.appendChild(button);
+    wrapper?.appendChild(button);
     return wrapper;
   } catch (e) {
     console.error("Error in createButtonWrapper:", e);
@@ -230,7 +230,7 @@ function insertFormIntoPopup() {
     const form = document.querySelector(".wpcf7");
     const container = document.getElementById("quote-form-container");
     if (form && container && !container.contains(form)) {
-      container.appendChild(form);
+      container?.appendChild(form);
     }
   } catch (error) {
     console.error("Failed to insert form into popup:", error);
@@ -317,7 +317,7 @@ function showThankYouMessage() {
       display: block;
     `;
 
-    document.body.appendChild(message);
+    document.body?.appendChild(message);
     setTimeout(() => {
       message.style.display = "none";
       setTimeout(() => {
@@ -347,7 +347,7 @@ function showErrorMessage() {
       display: block;
     `;
 
-    document.body.appendChild(message);
+    document.body?.appendChild(message);
     setTimeout(() => {
       message.style.display = "none";
     }, 3000);
