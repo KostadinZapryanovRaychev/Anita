@@ -36,6 +36,10 @@
   margin-right: auto;
 }
 
+.carmen-about-page-row-two{
+  padding-left: 16px !important;
+}
+
 .carmen-about-page-row-one img{
   width: 100%;
   height: 100%;
@@ -89,13 +93,21 @@
 @media (max-width: 768px) {
   .carmen-catalog-page-row{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
   }
   .subtitle {
     display: none;
   }
   .title_outer{
   display: none !important;
+  }
+  .carmen-catalog-page-row:nth-child(2n){
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .element_from_right > :first-child {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
 
@@ -123,4 +135,8 @@
       transform: translateY(0);
     }
   }
+}
+
+.carmen-about-page-first-sub-row{
+  margin-top: 4rem;
 }
