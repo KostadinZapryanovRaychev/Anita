@@ -111,6 +111,9 @@
   }
 }
 
+.custom-offer-button-wrapper button {
+  min-width: 4rem;
+}
 
 .subtitle {
   font-size: 1rem;

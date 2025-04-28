@@ -115,12 +115,15 @@ function setupFormSubmissionListener() {
 
 function addOfferButtons(section) {
   try {
-    const items = section.querySelectorAll(".qode_carousels .slides > li");
-    items.forEach((item) => {
-      if (!item.querySelector(".custom-offer-button-wrapper")) {
-        const button = createOfferButton(item);
+    const carousels = section.querySelectorAll(".qode-numbered-carousel");
+    if (!carousels.length) return;
+
+    carousels.forEach((carousel) => {
+      if (!carousel.querySelector(".custom-offer-button-wrapper")) {
+        const button = createOfferButton(carousel);
         const wrapper = createButtonWrapper(button);
-        item?.appendChild(wrapper);
+        carousel.style.position = "relative";
+        carousel.appendChild(wrapper);
       }
     });
 
@@ -150,12 +153,12 @@ function createButtonWrapper(button) {
     wrapper.className = "custom-offer-button-wrapper";
     wrapper.style.cssText = `
       position: absolute;
-      bottom: 20px;
+      bottom: 80px;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 10;
+      z-index: 9999;
     `;
-    wrapper?.appendChild(button);
+    wrapper.appendChild(button);
     return wrapper;
   } catch (e) {
     console.error("Error in createButtonWrapper:", e);
@@ -230,7 +233,7 @@ function insertFormIntoPopup() {
     const form = document.querySelector(".wpcf7");
     const container = document.getElementById("quote-form-container");
     if (form && container && !container.contains(form)) {
-      container?.appendChild(form);
+      container.appendChild(form);
     }
   } catch (error) {
     console.error("Failed to insert form into popup:", error);
@@ -317,7 +320,7 @@ function showThankYouMessage() {
       display: block;
     `;
 
-    document.body?.appendChild(message);
+    document.body.appendChild(message);
     setTimeout(() => {
       message.style.display = "none";
       setTimeout(() => {
@@ -347,7 +350,7 @@ function showErrorMessage() {
       display: block;
     `;
 
-    document.body?.appendChild(message);
+    document.body.appendChild(message);
     setTimeout(() => {
       message.style.display = "none";
     }, 3000);
