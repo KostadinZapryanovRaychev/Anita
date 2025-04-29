@@ -156,7 +156,7 @@ function createButtonWrapper(button) {
       bottom: 80px;
       left: 50%;
       transform: translateX(-50%);
-      z-index: 9999;
+      z-index: 1000;
     `;
     wrapper.appendChild(button);
     return wrapper;
@@ -167,16 +167,7 @@ function createButtonWrapper(button) {
 
 function styleOfferButton(button) {
   try {
-    button.style.cssText += `
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  `;
+    button?.classList?.add("custom-offer-button");
   } catch (e) {
     console.error("Error in styleOfferButton:", e);
   }
@@ -185,12 +176,10 @@ function styleOfferButton(button) {
 function attachHoverEffects(button) {
   try {
     button.addEventListener("mouseenter", () => {
-      button.style.background = "rgba(255, 255, 255, 0.9)";
-      button.style.color = "#000";
+      button?.classList?.add("custom-offer-button");
     });
     button.addEventListener("mouseleave", () => {
-      button.style.background = "rgba(0, 0, 0, 0.6)";
-      button.style.color = "#fff";
+      button?.classList?.add("custom-offer-button");
     });
   } catch (e) {
     console.error("Error in attachHoverEffects:", e);
@@ -199,12 +188,13 @@ function attachHoverEffects(button) {
 
 function handleOfferClick(item) {
   try {
-    const imgSrc = getItemImageSrc(item);
+    const titleElement = item.querySelector(".swiper-slide-active .qode-nc-item-title");
+    const titleText = titleElement ? titleElement.textContent.trim() : "N/A";
+
     showPopupForm();
     insertFormIntoPopup();
     showFormWrapper();
-    prefillFormWithProduct(imgSrc);
-    // console.log("Opened popup with image src:", imgSrc);
+    prefillFormWithProduct(titleText);
   } catch (error) {
     console.error("Error handling offer click:", error);
   }
@@ -249,19 +239,18 @@ function showFormWrapper() {
   }
 }
 
-function prefillFormWithProduct(imgSrc) {
+function prefillFormWithProduct(name) {
   setTimeout(() => {
     try {
       const hiddenInput =
         document.querySelector("#product-url") ||
         document.querySelector("#product-title");
-      if (hiddenInput) hiddenInput.value = imgSrc;
+      if (hiddenInput) hiddenInput.value = name;
 
       const form = document.querySelector(".wpcf7");
       const textarea = form?.querySelector("textarea");
       if (textarea) {
-        const machineName = getFormattedNameFromURL(imgSrc);
-        textarea.value = `Запитване относно ${machineName}\n\n`;
+        textarea.value = `Запитване относно ${name}\n\n`;
       }
     } catch (e) {
       console.error("Prefill error:", e);

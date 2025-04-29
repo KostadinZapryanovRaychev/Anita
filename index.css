@@ -7,9 +7,6 @@
   margin-right: auto;
 }
 
-.carmen-sclupt-page-row-two-video{
-  
-}
 
 .carmen-home-page-row-one-separator {
   color: black !important;
@@ -111,9 +108,6 @@
   }
 }
 
-.custom-offer-button-wrapper button {
-  min-width: 4rem;
-}
 
 .subtitle {
   font-size: 1rem;
@@ -142,4 +136,24 @@
 
 .carmen-about-page-first-sub-row{
   margin-top: 4rem;
+}
+
+.custom-offer-button {
+  background: rgba(221, 153, 51, 1);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 10rem;
+  min-height: 3rem;
+  text-align: center;
+}
+
+.custom-offer-button:hover {
+  background: rgba(221, 153, 51, 1);
+  color: #fff;
 }
