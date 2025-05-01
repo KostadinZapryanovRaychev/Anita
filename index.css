@@ -219,10 +219,6 @@ aside .widget ul {
     margin: 0 !important;
     padding: 0 !important;
   }
-  .element_from_right > :first-child {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-  }
   .carmen-shop-page-row-one .products li {
     display: flex !important;
     align-items: center;
@@ -231,6 +227,14 @@ aside .widget ul {
   .carmen-shop-page-row-three.vc_row {
     margin-left: 0 !important;
     margin-right: 0 !important;
+  }
+  .carmen-catalog-page-row .full_section_inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .carmen-catalog-page-row:nth-of-type(even) .full_section_inner {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
 
