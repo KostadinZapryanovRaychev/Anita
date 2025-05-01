@@ -1,6 +1,166 @@
+header:not(.with_hover_bg_color) nav.main_menu > ul > li:hover > a{
+    opacity: 1;
+}
+
+.shopping_cart_header .header_cart {
+    background-image: url('https://carnamedbulgaria.com/wp-content/uploads/2016/07/shopping-cart-light.png');
+    background-size: 28px 31px;
+    width: 28px;
+    height: 31px;
+    padding: 0 9px 2px 0;
+}
+
+.shopping_cart_header .header_cart span {
+    line-height: 37px;
+    width: 28px;
+    color: #ffffff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.side_menu_button a:last-child {
+    padding: 0 0 4px 8px;
+}
+
+.q_icon_with_title.left_from_title.custom_icon_image.tiny .icon_text_holder .icon_holder {
+    width: 16px!important;
+    padding: 7px 15px 0px 0;
+}
+
+.q_icon_with_title .icon_text_inner {
+    padding: 0;
+}
+
+.three_columns>.column1>.column_inner, .three_columns>.column2>.column_inner, .three_columns>.column3>.column_inner {
+    padding: 0 9%;
+}
+
+.footer_top .three_columns .column2 .column_inner>div {
+    margin: 0;
+}
+
+.title.title_size_small h1 {
+    text-transform: none;
+}
+
+.wpcf7 form.wpcf7-form p {
+    margin-bottom: 8px;
+}
+
+.woocommerce ul.products li.product .add-to-cart-button, .woocommerce .widget_price_filter .button, .woocommerce-page .widget_price_filter .button, .woocommerce ul.products li.product .added_to_cart {
+    padding: 0 37px;
+}
+
+.woocommerce ul.products li.product .added_to_cart {
+    color: #fff;
+    border-radius: 0;
+    height: 41px;
+    line-height: 41px;
+}
+
+.social_share_list_holder ul li i {
+    color: #303030;
+}
+.social_share_list_holder ul li {
+    margin-right: 13px;
+}
+
+.woocommerce div.product div.product_meta>.social_share_list_holder>span {
+    margin-right: 13px;
+    text-transform: none;
+}
+.woocommerce div.product div.product_meta>span, .woocommerce table.shop_attributes th { 
+    text-transform: capitalize;
+}
+
+.q_accordion_holder.accordion .ui-accordion-header {
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+aside .widget h5:not(.latest_post_title) {
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+}
+
+.widget #searchform {
+    background-color: #f6f6f6;
+    padding: 3px 0px;
+}
+
+.widget #searchsubmit, .widget #searchform input[type=text] {
+    color: #565656;
+}
+
+.widget #searchform ::-webkit-input-placeholder {
+color: #565656;
+}
+.widget #searchform :-moz-placeholder {
+color: #565656;
+}
+.widget #searchform ::-moz-placeholder {
+color: #565656;
+}
+.widget #searchform :-ms-input-placeholder {
+color: #565656;
+}
+
+.qode-instagram-feed li {
+    padding: 0 1px!important;
+    margin: 0 0 2px!important;
+}
+
+.qode-instagram-feed {    
+    margin-left: 0;
+    margin-right: -2px;
+    margin-top: 5px!important;
+}
+
+aside .widget ul {
+    color: #303030;
+}
+
+.woocommerce-pagination ul.page-numbers li a, .woocommerce-pagination ul.page-numbers li span.current {
+    font-size: 16px;
+    border-radius: 0px;
+    border: 1px solid #cdcdcd;
+    color: #303030;
+    margin-right: 2px;
+}
+
+.woocommerce-pagination ul.page-numbers li a:hover, .woocommerce-pagination ul.page-numbers li span.current {
+    background-color: #303030;
+    border-color: #303030;
+    color: #fff;
+}
+
+.woocommerce-pagination {
+    padding: 29px 0 53px;
+}
+
+.qode_search_form .container .qode_search_close {
+    right: -4px;
+}
+
+.shopping_cart_dropdown .qbutton {
+    background-color: #464646;
+}
+
+@media only screen and (max-width: 600px) {
+.title.title_size_small h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+}
+
+ .q_slider + .container {
+position: relative;
+}
+
 .carmen-body-sclupt-page-row-one , .carmen-body-sclupt-page-row-two {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-left: auto;
@@ -22,7 +182,6 @@
   text-transform: capitalize;
 }
 
-
 .carmen-about-page-row-one{
   width: 100%;
   display: flex;
@@ -31,10 +190,6 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.carmen-about-page-row-two{
-  padding-left: 16px !important;
 }
 
 .carmen-about-page-row-one img{
@@ -50,34 +205,6 @@
   }
 }
 
-.carmen-about-subtitle{
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 16px;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 16px;
-  min-height: 32px;
-  width: 100%;
-}
-
-.carmen-catalog-page-row-one{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 520px;
-}
-
-.carmen-catalog-page-row-one img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .carmen-catalog-page-row{
   display: flex;
   flex-direction: row;
@@ -86,6 +213,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.carmen-about-page-row-two{
+  padding-left: 16px !important;
+}
+
 
 @media (max-width: 768px) {
   .carmen-catalog-page-row{
@@ -107,7 +239,6 @@
     flex-direction: column-reverse !important;
   }
 }
-
 
 .subtitle {
   font-size: 1rem;
@@ -133,27 +264,26 @@
     }
   }
 }
-
 .carmen-about-page-first-sub-row{
   margin-top: 4rem;
 }
 
-.custom-offer-button {
-  background: rgba(221, 153, 51, 1);
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  font-size: 1.2rem;
-  font-weight: bold !important;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  min-width: 10rem;
-  min-height: 3rem;
-  text-align: center;
-}
+  .custom-offer-button {
+    background: rgba(221, 153, 51, 1);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 10rem;
+    min-height: 3rem;
+    text-align: center;
+  }
 
-.custom-offer-button:hover {
-  background: rgba(221, 153, 51, 1);
-  color: #fff;
-}
+  .custom-offer-button:hover {
+    background: rgba(221, 153, 51, 1);
+    color: #fff;
+  }
