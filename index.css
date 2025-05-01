@@ -202,47 +202,11 @@ aside .widget ul {
   margin-right: auto;
 }
 
-@media (max-width: 768px) {
-  .carmen-shop-page-row-one,
-  .carmen-shop-page-row-three {
-    display: flex;
-    flex-direction: column !important;
-  }
-  .subtitle {
-    display: none;
-  }
-  .title_outer {
-    display: none !important;
-  }
-  .carmen-shop-page-row-one,
-  .carmen-shop-page-row-three:nth-child(2n) {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .carmen-shop-page-row-one .products li {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-  .carmen-shop-page-row-three.vc_row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-  .carmen-catalog-page-row .full_section_inner {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  .carmen-catalog-page-row:nth-of-type(even) .full_section_inner {
-    display: flex !important;
-    flex-direction: column-reverse !important;
-  }
-}
-
 .carmen-about-page-row-one {
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -272,7 +236,7 @@ aside .widget ul {
 }
 
 .carmen-about-page-row-two {
-  padding-left: 16px !important;
+  padding-left: 32px !important;
 }
 
 .subtitle {
@@ -321,4 +285,67 @@ aside .widget ul {
 .custom-offer-button:hover {
   background: rgba(221, 153, 51, 1);
   color: #fff;
+}
+.carmen-contact-page-paragraphe-one {
+  color: black !important;
+}
+@media (max-width: 768px) {
+  .carmen-shop-page-row-one,
+  .carmen-shop-page-row-three {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .carmen-shop-page-row-three a {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .carmen-shop-page-row-three .qqvfw-quick-view-button-wrapper {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  .subtitle {
+    display: none;
+  }
+  .title_outer {
+    display: none !important;
+  }
+  .carmen-shop-page-row-one,
+  .carmen-shop-page-row-three:nth-child(2n) {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .carmen-shop-page-row-one .products li {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .carmen-shop-page-row-three.vc_row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .carmen-catalog-page-row .full_section_inner {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .carmen-catalog-page-row:nth-of-type(even) .full_section_inner {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .carmen-about-page-row-one img {
+    min-height: 356px !important;
+  }
+  .carmen-about-page-row-one .wpb_single_image .vc_single_image-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .carmen-about-page-row-one.vc_row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .carmen-about-page-row-two {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    margin-top: 8px !important;
+  }
 }
