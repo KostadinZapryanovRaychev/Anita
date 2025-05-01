@@ -286,7 +286,7 @@ aside .widget ul {
   background: rgba(221, 153, 51, 1);
   color: #fff;
 }
-.carmen-contact-page-paragraphe-one {
+.carmen-contact-page-paragraphe-one p {
   color: black !important;
 }
 @media (max-width: 768px) {
