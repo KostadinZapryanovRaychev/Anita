@@ -188,7 +188,9 @@ function attachHoverEffects(button) {
 
 function handleOfferClick(item) {
   try {
-    const titleElement = item.querySelector(".swiper-slide-active .qode-nc-item-title");
+    const titleElement = item.querySelector(
+      ".swiper-slide-active .qode-nc-item-title"
+    );
     const titleText = titleElement ? titleElement.textContent.trim() : "N/A";
 
     showPopupForm();
