@@ -315,6 +315,34 @@ aside .widget ul {
   justify-content: space-between !important;
   align-items: center !important;
 }
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.catalogue-paragraphe-description:nth-of-type(even) {
+  animation: fadeInLeft 2s ease forwards;
+}
+
+.catalogue-paragraphe-description:nth-of-type(odd) {
+  animation: fadeInRight 2s ease forwards;
+}
 @media (max-width: 768px) {
   .carmen-shop-page-row-one,
   .carmen-shop-page-row-three {
