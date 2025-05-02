@@ -302,6 +302,19 @@ aside .widget ul {
 .header-widget .widget_block .widget_media_image .header-left-widget {
   max-width: 32px !important;
 }
+.above-header-right-part {
+  padding: 0px !important;
+}
+.header_top p {
+  line-height: normal !important;
+  text-align: center !important;
+  padding-top: 8px !important;
+}
+.header_top > *:first-child {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
 @media (max-width: 768px) {
   .carmen-shop-page-row-one,
   .carmen-shop-page-row-three {
