@@ -289,6 +289,19 @@ aside .widget ul {
 .carmen-contact-page-paragraphe-one p {
   color: black !important;
 }
+.header_top .clearfix {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+.header_top .clearfix img {
+  max-width: 50px !important;
+  max-height: 50px !important;
+  padding: 4px !important;
+}
+.header-widget .widget_block .widget_media_image .header-left-widget {
+  max-width: 32px !important;
+}
 @media (max-width: 768px) {
   .carmen-shop-page-row-one,
   .carmen-shop-page-row-three {
@@ -347,5 +360,10 @@ aside .widget ul {
     padding-left: 8px !important;
     padding-right: 8px !important;
     margin-top: 8px !important;
+  }
+  .carmen-shop-page-row-one .woocommerce-loop-category__title {
+    font-size: 1.2rem !important;
+    font-weight: bold !important;
+    color: #000 !important;
   }
 }
